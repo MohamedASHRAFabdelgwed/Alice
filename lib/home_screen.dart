@@ -158,7 +158,109 @@ class _HomeScreenState extends State<HomeScreen> {
                 Icon(Icons.chevron_right,color: (AppColors.seeMore),
                 ),
               ],),
-            const SizedBox(height: 10,),
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                        color: const Color(0xffF9F5FF),
+                        borderRadius: BorderRadius.circular(18)),
+                    child: Row(
+                      children: [
+                        Image.asset("assets/Frame.png"),
+                        const SizedBox(
+                          width: 12,
+                        ),
+                        const Text(
+                          "Relaxation",
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 24,
+                ),
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                        color: const Color(0xffFDF2FA),
+                        borderRadius: BorderRadius.circular(18)),
+                    child: Row(
+                      children: [
+                        Image.asset("assets/Frame (1).png"),
+                        const SizedBox(
+                          width: 12,
+                        ),
+                        const Text(
+                          "Meditation",
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                        color: const Color(0xffF9F5FF),
+                        borderRadius: BorderRadius.circular(18)),
+                    child: Row(
+                      children: [
+                        Image.asset("assets/Group.png"),
+                        const SizedBox(
+                          width: 12,
+                        ),
+                        const Text(
+                          "Breathing",
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 24,
+                ),
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                        color: const Color(0xffFDF2FA),
+                        borderRadius: BorderRadius.circular(18)),
+                    child: Row(
+                      children: [
+                        Image.asset("assets/Group (1).png"),
+                        const SizedBox(
+                          width: 12,
+                        ),
+                        const Text(
+                          "Yoga",
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            // BOTTOM navigation bar
+            const SizedBox(height: 8),
             Spacer(),
             BottomNavigationBar(
               iconSize: 20,
